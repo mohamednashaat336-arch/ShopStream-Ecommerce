@@ -1,0 +1,28 @@
+.hero-cart-main{
+    padding: 64px 24px 64px 24px;
+}
+.hero-cart{
+    padding-top: 523px;
+    padding-bottom: 523px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-cart-img{
+    background-color: #DEE9FC;
+    border-radius: 9999px;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+.hero-cart-img img{
+    width: 240px;
+    height: 240px;
+    max-width: 320px;
+    opacity: 90%;
+    
+}
