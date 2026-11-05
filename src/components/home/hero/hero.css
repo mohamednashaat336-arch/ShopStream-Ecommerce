@@ -45,6 +45,9 @@
     gap: 16px;
 }
 .btn1{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 189px;
     height: 54px;
     border-radius: 8px;
@@ -56,8 +59,12 @@
     line-height: 20px;
     letter-spacing: 0.7px;
     color: white;
+    text-decoration: none;
 }
 .btn2{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 190px;
     height: 54px;
     border-radius: 8px;
@@ -68,6 +75,7 @@
     line-height: 20px;
     letter-spacing: 0.7px;
     color: #3525CD;
+    text-decoration: none;
 }
 
 
@@ -85,4 +93,36 @@
     box-shadow: 10px 25px 50px -12px rgba(0, 0, 0, 0.25);
     
 
+}
+
+@media (max-width : 900px) {
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 32px;
+    }
+    .hero-text{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    
+    }
+    
+}
+@media (max-width : 620px) {
+    .hero-text h1, .hero-text p { width: 100%; }
+    .hero-text h1 { font-size: 36px; line-height: 1.15; }
+    .hero-text p { font-size: 16px; }
+    .main { padding: 40px 16px; }
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-img { width: 100%; }
 }

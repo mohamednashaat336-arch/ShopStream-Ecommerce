@@ -78,3 +78,19 @@
   left: 16px;
   color: white;
 }
+
+@media (max-width: 900px) {
+  .topC-main { padding: 48px 20px; }
+  .categories-grid { height: 430px; gap: 16px; }
+}
+@media (max-width: 600px) {
+  .topC-main { padding: 40px 16px; }
+  .topC-title h3 { font-size: 28px; line-height: 1.2; }
+  .topC-text { gap: 12px; align-items: flex-start; }
+  .categories-grid { height: auto; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: auto; gap: 12px; }
+  .categories-item { min-height: 150px; }
+  .categories-item img { position: absolute; inset: 0; }
+  .computing { grid-column: 1 / -1; grid-row: auto; min-height: 230px; }
+  .wearables, .audio, .home-theater { grid-column: auto; grid-row: auto; }
+  .home-theater { grid-column: 1 / -1; }
+}

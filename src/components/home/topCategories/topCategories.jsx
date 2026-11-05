@@ -4,6 +4,7 @@ import topC_computing from '../../../assets/topC_computing.png'
 import topC_wearables from '../../../assets/topC_wearables.png'
 import topC_audio from '../../../assets/topC_audio.png'
 import topC_home_theater from '../../../assets/topC_home_theater.png'
+import { Link } from 'react-router-dom'
 
 
 export function TopCategories(){
@@ -15,7 +16,7 @@ export function TopCategories(){
                 
                     <div className="topC-text">
                         <p>Curated gear for every lifestyle.</p>
-                        <a href="">See All <FaArrowRight /> </a>
+                        <Link to="/categories">See All <FaArrowRight /> </Link>
                     </div>
                 </div>
 

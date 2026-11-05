@@ -1,0 +1,8 @@
+.api-category-directory { padding: 0 24px 64px; }
+.api-category-heading h2 { margin: 0 0 6px; font-size: 28px; color: #121c2a; }
+.api-category-heading p { margin: 0 0 20px; color: #646477; }
+.api-category-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.api-category-grid a { display: flex; justify-content: space-between; gap: 12px; padding: 16px; border: 1px solid #e5e7eb; border-radius: 10px; background: #fff; color: #3525CD; text-decoration: none; }
+.api-category-grid a:hover { border-color: #3525CD; background: #f7f9ff; }
+@media (max-width: 760px) { .api-category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 480px) { .api-category-directory { padding: 0 16px 40px; } .api-category-grid { grid-template-columns: 1fr; } }

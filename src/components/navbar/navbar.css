@@ -16,3 +16,8 @@
     background-color: #EFF4FF !important;
     border-radius: 9999px !important; 
 }
+.cart-nav-link { position: relative; display: inline-flex; align-items: center; }
+.cart-count { position: absolute; top: -5px; right: -10px; display: grid; place-items: center; min-width: 18px; height: 18px; padding: 0 4px; border-radius: 999px; background: #3525CD; color: white; font-size: 11px; line-height: 1; }
+.profile-nav-link { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
+.profile-nav-label { max-width: 150px; overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 991px) { .cart-nav-link { width: fit-content; margin: 8px 0 12px 12px !important; } }

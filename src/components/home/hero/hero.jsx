@@ -1,5 +1,6 @@
 import pic1_home from '../../../assets/pic1_home.png'
 import './hero.css'
+import { Link } from 'react-router-dom'
 
 export function Hero(){
     return(
@@ -10,8 +11,8 @@ export function Hero(){
                     <h1>Experience the Future of <span className='hero-h1'>Innovation.</span></h1>
                     <p>Explore our curated selection of premium electronics designed to elevate your daily stream of life. Precision engineering meets minimalist design.</p>
                     <div className='-btn'>
-                        <button className='btn1'>Shop Electronics</button>
-                        <button className='btn2'>View Collections</button>
+                        <Link to="/products" className='btn1'>Shop Electronics</Link>
+                        <Link to="/categories" className='btn2'>View Collections</Link>
                     </div>
                     
 

@@ -4,7 +4,10 @@ import featured_products_audio from '../../../assets/featured_products_audio.png
 import featured_products_accessories from '../../../assets/featured_products_accessories.png'
 import featured_products_drones from '../../../assets/featured_products_drones.png'
 import featured_products_gaming from '../../../assets/featured_products_gaming.png'
+import { localProducts } from '../../../services/products'
+import { useCart } from '../../../hooks/useCart'
 export function FeaturedProducts(){
+    const { addToCart } = useCart()
     return(
         <>
             <div className="featured-main">
@@ -14,14 +17,14 @@ export function FeaturedProducts(){
                         <p>The latest and greatest in tech innovation.</p>
                         <span>
                             <nav aria-label="Page navigation example">
-                                <ul class="pagination">
-                                    <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
+                                <ul className="pagination">
+                                    <li className="page-item">
+                                    <a className="page-link" href="#" aria-label="Previous">
                                         <span aria-hidden="true">&laquo;</span>
                                     </a>
                                     </li>
-                                    <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
+                                    <li className="page-item">
+                                    <a className="page-link" href="#" aria-label="Next">
                                         <span aria-hidden="true">&raquo;</span>
                                     </a>
                                     </li>
@@ -40,7 +43,7 @@ export function FeaturedProducts(){
                                 <span className='badge- '>BEST SELLER</span>
                                 <span className='card-price'>
                                     <p>$199.00</p> 
-                                    <button><FaCartArrowDown/> </button>
+                                    <button type="button" onClick={() => addToCart(localProducts.find((product) => product.id === 2001))} aria-label="Add StreamPods Pro Gen 2 to cart"><FaCartArrowDown/> </button>
                                 </span>
 
                             </div>
@@ -56,7 +59,7 @@ export function FeaturedProducts(){
                                 {/* <span className='badge '>BEST SELLER</span> */}
                                 <span className='card-price'>
                                     <p>$129.00</p> 
-                                    <button><FaCartArrowDown/> </button>
+                                    <button type="button" onClick={() => addToCart(localProducts.find((product) => product.id === 2002))} aria-label="Add StreamKey Ultra Slim to cart"><FaCartArrowDown/> </button>
                                 </span>
 
                             </div>
@@ -72,7 +75,7 @@ export function FeaturedProducts(){
                                 <span className='badge-  '>NEW</span>
                                 <span className='card-price'>
                                     <p>$849.00</p> 
-                                    <button><FaCartArrowDown/> </button>
+                                    <button type="button" onClick={() => addToCart(localProducts.find((product) => product.id === 2003))} aria-label="Add AeroStream V3 to cart"><FaCartArrowDown/> </button>
                                 </span>
 
                             </div>
@@ -88,7 +91,7 @@ export function FeaturedProducts(){
                                 
                                 <span className='card-price'>
                                     <p>$89.00</p> 
-                                    <button><FaCartArrowDown/> </button>
+                                    <button type="button" onClick={() => addToCart(localProducts.find((product) => product.id === 2004))} aria-label="Add Nexus Glide Pro to cart"><FaCartArrowDown/> </button>
                                 </span>
 
                             </div>

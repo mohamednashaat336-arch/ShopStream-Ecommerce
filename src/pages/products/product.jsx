@@ -1,11 +1,11 @@
 import { Navbar } from "../../components/navbar/navbar";
-import { AllProducts } from "../../components/product/allProduct";
+import { ProductCatalog } from "../../components/product/ProductCatalog";
 
 export function Products(){
     return(
         <>
             <Navbar />
-            <AllProducts />
+            <ProductCatalog />
         </>
     )
 }
